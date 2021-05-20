@@ -16,15 +16,17 @@ greetingsBtn.addEventListener('click', function(){
   var selected = document.querySelector('input[name="language"]:checked')
     greetingInstance.setName(input.value)
     output.innerHTML =  greetingInstance.languageSelected(selected.value, input.value)
-    var readLocalStorage = localStorage.setItem('theName', JSON.stringify(greetingInstance.getNameList()))
+    localStorage.setItem('theName', JSON.stringify(greetingInstance.getNameList()))
     countElem.innerHTML =  greetingInstance.greetingsCounter()
 })
-countElem.innerHTML =  greetingInstance.greetingsCounter()
+
 clearAllBtn.addEventListener('click', function(){
-    // greetingInstance.setName(input.value)
-    // output.innerHTML =  greetingInstance.languageSelected(selected.value, input.value)
-    // countElem.innerHTML =  greetingInstance.greetingsCounter()
+    localStorage.clear();
+    location.reload()
 })
+
+countElem.innerHTML =  greetingInstance.greetingsCounter()
+
 
 
 

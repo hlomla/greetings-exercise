@@ -1,64 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/greet.css">
-<style>
-    body {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    .container  {
-        width: 65%;
-        margin: auto;
-        background-color: rgb(208, 76, 76);
-        padding: 1.5em;
-    }
-    .counter{
-        font-size: 150%;
-        /* float: right; */
-    }
-    .greet-output{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        height: 50px;
-        width: 250px;
-        /* background-color: rgb(211, 135, 58); */
-        text-align: center;
-    }
-</style>
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            width: auto;
+            margin: auto;
+            padding: 1.5em;
+            background-color: rgb(248, 104, 104);
+        }
+
+        .counter {
+            font-size: 150%;
+            float: right;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-right: 950px;
+            margin-top: -23px;
+        }
+
+        .greet-output {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            height: 50px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .language-greet {
+            margin-top: 2.5%;
+            display: flex;
+
+        }
+
+        .Greet-Me {
+            margin-top: 2.5%;
+            border-radius: 16px;
+
+        }
+
+        .Clear {
+            margin-top: 2.5%;
+            border-radius: 16px;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Greetings</h1>
-        <!-- <form action="/js/greet.js"> -->
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" class="name-input" value=" "><br>
-        <!-- </form> -->
-        <div class="counter">
-           Count = 0
-        </div>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" class="name-input" value=" "><br>
+        <h4>counter = </h4>
+        <span class="counter">
+            0
+        </span>
+
+
         <button class="Greet-Me">Greet Me</button>
         <button class="Clear">Clear</button>
-    <div class="language-greet">
-        <!-- <form action="/js/greet.js"> -->
+
+
+        <div class="language-greet">
+
             <input type="radio" id="" name="language" value="isiXhosa" checked="">
             <label for="isiXhosa">isiXhosa</label><br>
+
             <input type="radio" id="" name="language" value="Greek">
             <label for="Greek">Greek</label><br>
+
             <input type="radio" id="" name="language" value="English">
             <label for="English">English</label><br>
-        <!-- </form> -->
-    </div> 
-    <div class="greet-output">
 
-    </div>  
+        </div>
+        <div class="greet-output">
+
+        </div>
     </div>
 
-    
+
 </body>
-<script src="./greet-factory-function/greet.js"></script>
+<script src="./greet-factory-function/greet.js" charset=""></script>
 <script src="./js/greet.js"></script>
 
 </html>

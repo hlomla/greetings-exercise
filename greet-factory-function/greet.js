@@ -1,11 +1,9 @@
 function Greet(names) {
-    var nameList = [];
-    nameList = names
+    var nameList = names || [];
 
     //greet people with different
     function languageSelected(language, myName){
-        var  name = myName.charAt(0).toUpperCase()  + myName.slice(1).toLowerCase()
-        
+        var  name = myName.charAt([0]).toUpperCase()  + myName.slice(1).toLowerCase()
         if(language === "isiXhosa") {
             return "Molo, " + name
         }
@@ -20,7 +18,7 @@ function Greet(names) {
 
 
     function setName(myName){
-        var  name = myName.charAt(0).toUpperCase()  + myName.slice(1).toLowerCase()
+        var  name = myName.charAt([0]).toUpperCase()  + myName.slice(1).toLowerCase()
         if(!nameList.includes(name)){
             nameList.push(name)
         
