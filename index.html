@@ -25,10 +25,12 @@
         }
 
         .greet-output {
+            margin-top: 15px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             height: 50px;
             width: 250px;
             text-align: center;
+            text-transform: capitalize;
         }
 
         .language-greet {
@@ -47,6 +49,15 @@
             margin-top: 2.5%;
             border-radius: 16px;
         }
+
+        .h4 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            margin-left: 900px;
+            font-weight: bold;
+
+        }
+        
     </style>
 </head>
 
@@ -56,19 +67,14 @@
 
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" class="name-input" value=" "><br>
-        <h4>counter = </h4>
         <span class="counter">
+            <h5>Count = </h5>
             0
         </span>
 
-
-        <button class="Greet-Me">Greet Me</button>
-        <button class="Clear">Clear</button>
-
-
         <div class="language-greet">
 
-            <input type="radio" id="" name="language" value="isiXhosa" checked="">
+            <input type="radio" id="" name="language" value="isiXhosa">
             <label for="isiXhosa">isiXhosa</label><br>
 
             <input type="radio" id="" name="language" value="Greek">
@@ -76,9 +82,14 @@
 
             <input type="radio" id="" name="language" value="English">
             <label for="English">English</label><br>
+        </div>
+        <button class="Greet-Me">Greet Me</button>
+        <button class="Clear">Clear</button>
+
+        <div class="greet-output">
 
         </div>
-        <div class="greet-output">
+        <div class="errors">
 
         </div>
     </div>

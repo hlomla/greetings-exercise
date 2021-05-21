@@ -3,7 +3,7 @@ function Greet(names) {
 
     //greet people with different
     function languageSelected(language, myName){
-        var  name = myName.charAt([0]).toUpperCase()  + myName.slice(1).toLowerCase()
+        var  name = myName.charAt(0).toUpperCase()  + myName.slice(1).toLowerCase()
         if(language === "isiXhosa") {
             return "Molo, " + name
         }
@@ -18,10 +18,9 @@ function Greet(names) {
 
 
     function setName(myName){
-        var  name = myName.charAt([0]).toUpperCase()  + myName.slice(1).toLowerCase()
+        var  name = myName.charAt(0).toUpperCase()  + myName.slice(1).toLowerCase()
         if(!nameList.includes(name)){
             nameList.push(name)
-        
         }
     }
     function getNameList(){
@@ -31,10 +30,21 @@ function Greet(names) {
     function greetingsCounter(){
        return nameList.length
     }
+    function errorMsg(language, myName){
 
+        if(!language && myName === "") {
+            return  "Please enter name and select language!"
+        }
 
-    //FUNCTION THAT WILL RETURN ALL THE NAMES
-    
+        if(language && myName === ""){
+                return  "Please enter name!"
+        }
+
+        if(language === null){
+            return "Please select a language!"
+        }
+        
+    }
 
 
 return {
@@ -42,5 +52,6 @@ return {
     greetingsCounter,
     languageSelected,
     getNameList,
+    errorMsg
 }
 }
