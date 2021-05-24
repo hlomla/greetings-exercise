@@ -1,0 +1,68 @@
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: auto;
+    margin: auto;
+    padding: 1.5em;
+    background-color: rgb(248, 131, 131);
+    text-align: center;
+}
+
+.counter {
+    font-size: 150%;
+    float: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* margin-left: 1.5%; */
+    margin-right: 35%;
+    margin-top: -4.5%;
+    /* margin-right: auto;
+    margin-top: auto; */
+
+}
+
+.greet-output {
+    margin-top: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.language-greet {
+    text-align: center;
+
+}
+
+/* .radioBtn1{
+    text-align: center;
+}
+.radioBtn2{
+    text-align: center;
+}
+.radioBtn3{
+    text-align: center;
+} */
+
+.Greet-Me {
+    margin-top: 2.5%;
+    border-radius: 16px;
+
+}
+
+.Clear {
+    margin-top: 2.5%;
+    border-radius: 16px;
+}
+
+.h4 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    margin-left: 900px;
+    font-weight: bold;
+
+}
+
+.errors {
+    color: red;
+}

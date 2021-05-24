@@ -5,98 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Greetings Exercise</title>
     <link rel="stylesheet" href="./css/greet.css">
-    <style>
-        body {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            width: auto;
-            margin: auto;
-            padding: 1.5em;
-            background-color: rgb(248, 104, 104);
-        }
-
-        .counter {
-            font-size: 150%;
-            float: right;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            margin-right: 950px;
-            margin-top: -23px;
-        }
-
-        .greet-output {
-            margin-top: 15px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            height: 50px;
-            width: 250px;
-            text-align: center;
-            text-transform: capitalize;
-        }
-
-        .language-greet {
-            margin-top: 2.5%;
-            display: flex;
-
-        }
-
-        .Greet-Me {
-            margin-top: 2.5%;
-            border-radius: 16px;
-
-        }
-
-        .Clear {
-            margin-top: 2.5%;
-            border-radius: 16px;
-        }
-
-        .h4 {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            display: flex;
-            margin-left: 900px;
-            font-weight: bold;
-
-        }
-        
-    </style>
+   
 </head>
 
 <body>
     <div class="container">
         <h1>Greetings</h1>
 
+        <div class="errors">
+
+        </div>
+
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" class="name-input" value=" "><br>
+
         <span class="counter">
-            <h5>Count = </h5>
-            0
+            <h5>Count :0 </h5>
         </span>
+        <br>
 
         <div class="language-greet">
+            <div>
+                <input type="radio" id="" name="language" value="isiXhosa">
+                <label for="isiXhosa">isiXhosa</label><br>
 
-            <input type="radio" id="" name="language" value="isiXhosa">
-            <label for="isiXhosa">isiXhosa</label><br>
+            </div>
 
-            <input type="radio" id="" name="language" value="Greek">
-            <label for="Greek">Greek</label><br>
+            <div>
+                <input type="radio" id="" name="language" value="Greek">
+                <label for="Greek">Greek</label><br>
+            </div>
 
-            <input type="radio" id="" name="language" value="English">
-            <label for="English">English</label><br>
+            <div>
+                <input type="radio" id="" name="language" value="English">
+                <label for="English">English</label><br>
+            </div>
         </div>
+        <br>
+
         <button class="Greet-Me">Greet Me</button>
         <button class="Clear">Clear</button>
 
-        <div class="greet-output">
-
-        </div>
-        <div class="errors">
+        <div class="greet-output" text-align = "center">
 
         </div>
     </div>
 
 
 </body>
-<script src="./greet-factory-function/greet.js" charset=""></script>
+<script src="./greet-factory-function/greet-FF.js" charset=""></script>
 <script src="./js/greet.js"></script>
 
 </html>
