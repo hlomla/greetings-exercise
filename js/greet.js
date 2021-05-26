@@ -5,6 +5,7 @@ var output = document.querySelector('.greet-output')
 var input = document.querySelector('.name-input')
 var errorElem = document.querySelector('.errors')
 
+
 var namesArray;
 
 if (localStorage['theName']) {
@@ -23,14 +24,14 @@ if(greetingInstance.greetingsCounter()){
 greetingsBtn.addEventListener('click', function () {
   var selected = document.querySelector('input[name="language"]:checked')
   
-
-  greetingInstance.setName(input.value)
-
+  setTimeout(function(){errorElem.innerHTML = greetingInstance.timeOutErr() }, 3000);
+  
   const errorMessage = greetingInstance.errorMsg(selected, input.value);
   if (errorMessage) {
     errorElem.innerHTML = errorMessage;
   } else {
 
+    greetingInstance.setName(input.value)
     output.innerHTML =  greetingInstance.languageSelected(selected.value, input.value)
     localStorage.setItem('theName', JSON.stringify(greetingInstance.getNameList()))
     countElem.innerHTML = greetingInstance.greetingsCounter()

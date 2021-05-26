@@ -6,50 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greetings Exercise</title>
-    <link rel="stylesheet" href="./css/greet.css">
-   
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/simple-grid.css">
+
 </head>
 
 <body>
-    <div class="container">
-        <h1>Greetings</h1>
+    <div class="row">
+        <div class="col-12">
+            <h1>Greetings</h1>
+        </div>
+    </div>
 
-        <div class="errors">
 
+    <div class="row">
+        <div class="col-12">
+            <div class="errors">
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" class="name-input" value=" "><br>
         </div>
 
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" class="name-input" value=" "><br>
-
-        <span class="counter">
-            <h5>Count :0 </h5>
-        </span>
-        <br>
-
+        <div class="col-4">
+            <span class="counter">
+                Count : 0
+            </span>
+        </div>
+    </div>
+    <div class="row">
         <div class="language-greet">
-            <div>
+            <!-- <div class="col-4"> -->
                 <input type="radio" id="" name="language" value="isiXhosa">
-                <label for="isiXhosa">isiXhosa</label><br>
+            <label for="isiXhosa">isiXhosa</label>
+        <!-- </div> -->
 
-            </div>
+        <!-- <div class="col-4"> -->
+            <input type="radio" id="" name="language" value="Greek">
+            <label for="Greek">Greek</label>
+        <!-- </div> -->
 
-            <div>
-                <input type="radio" id="" name="language" value="Greek">
-                <label for="Greek">Greek</label><br>
-            </div>
+        <!-- <div class="col-4"> -->
+            <input type="radio" id="" name="language" value="English">
+            <label for="English">English</label>
+        <!-- </div> -->
 
-            <div>
-                <input type="radio" id="" name="language" value="English">
-                <label for="English">English</label><br>
-            </div>
         </div>
-        <br>
+    </div>
 
-        <button class="Greet-Me">Greet Me</button>
-        <button class="Clear">Clear</button>
+    <div class="row">
+        <div class="col-12">
+            <button class="Greet-Me">Greet Me</button>
+            <button class="Clear">Clear</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="greet-output" text-align="center">
 
-        <div class="greet-output" text-align = "center">
-
+            </div>
         </div>
     </div>
 

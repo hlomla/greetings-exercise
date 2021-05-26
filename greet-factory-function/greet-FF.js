@@ -46,13 +46,16 @@ function Greet(names) {
         }
         return '';
     }
-
+function timeOutErr(){
+    return ""
+}
 
     return {
         setName,
         greetingsCounter,
         languageSelected,
         getNameList,
-        errorMsg
+        errorMsg,
+        timeOutErr
     }
 }
