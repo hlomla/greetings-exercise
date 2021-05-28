@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greetings Exercise</title>
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/simple-grid.css">
 
 </head>
@@ -32,28 +31,24 @@
             <input type="text" id="name" name="name" class="name-input" value=" "><br>
         </div>
 
-        <div class="col-4">
+        <div class="col-4" class="Count">
+            Count :
             <span class="counter">
-                Count : 0
+                0
             </span>
         </div>
     </div>
     <div class="row">
         <div class="language-greet">
-            <!-- <div class="col-4"> -->
-                <input type="radio" id="" name="language" value="isiXhosa">
-            <label for="isiXhosa">isiXhosa</label>
-        <!-- </div> -->
 
-        <!-- <div class="col-4"> -->
+            <input type="radio" id="" name="language" value="isiXhosa">
+            <label for="isiXhosa">isiXhosa</label>
+
             <input type="radio" id="" name="language" value="Greek">
             <label for="Greek">Greek</label>
-        <!-- </div> -->
 
-        <!-- <div class="col-4"> -->
             <input type="radio" id="" name="language" value="English">
             <label for="English">English</label>
-        <!-- </div> -->
 
         </div>
     </div>
@@ -71,10 +66,15 @@
             </div>
         </div>
     </div>
-
+    <div class="row">
+        <div class="col-12">
+            <a href="./greet-unit-tests/index.html" >Unit-Tests</a>
+        </div>
+    </div>
 
 </body>
 <script src="./greet-factory-function/greet-FF.js" charset=""></script>
 <script src="./js/greet.js"></script>
+
 
 </html>

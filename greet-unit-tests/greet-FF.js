@@ -2,24 +2,22 @@ function Greet(names) {
     var nameList = names || [];
 
     function languageSelected(language, myName) {
-        var name = myName.charAt(0).toUpperCase() + myName.slice(1).toLowerCase()
         if (language === "isiXhosa") {
-            return "Molo, " + name
+            return "Molo, " + myName
         }
         if (language === "Greek") {
-            return "Geia, " + name
+            return "Geia, " + myName
         }
         if (language === "English") {
-            return "Hello, " + name
+            return "Hello, " + myName
         }
 
     }
 
 
     function setName(myName) {
-        var name = myName.charAt(0).toUpperCase() + myName.slice(1).toLowerCase()
-        if (!nameList.includes(name)) {
-            nameList.push(name)
+        if (!nameList.includes(myName)) {
+            nameList.push(myName)
         }
     }
     function getNameList() {
@@ -31,16 +29,14 @@ function Greet(names) {
     }
     
     function errorMsg(language, myName) {
-
-        if (language === null && myName.trim().length === 0) {
+        if (language !== null ||  myName === undefined  ) {
+            return "Please enter name!"
+        }
+       else if (language === null && myName.trim().length === 0) {
             return "Please enter name and select language!"
         }
 
-        if (!myName || myName.trim().length === 0) {
-            return "Please enter name!"
-        }
-
-        if (language === null) {
+       else if (language === null && myName !== undefined) {
             return "Please select a language!"
         }
         return '';
@@ -56,5 +52,5 @@ function timeOutErr(){
         getNameList,
         errorMsg,
         timeOutErr
-    }
+    }          
 }
